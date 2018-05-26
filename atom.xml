@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>F_SCM_T</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-26T09:55:17.711Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Fei Tao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Hexo搭建个人网站</title>
+    <link href="http://yoursite.com/2018/05/25/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4%EF%BC%9A%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/05/25/写在开头：我的第一篇博客/</id>
+    <published>2018-05-25T10:58:55.009Z</published>
+    <updated>2018-05-26T09:55:17.711Z</updated>
+    
+    <content type="html"><![CDATA[<p>   很高兴看到您的到来，这是我的第一篇博客，当然首先得介绍一下自己是如何一步一步基于Hexo搭建起个人网站的。由于个人电脑是windows系统，所以下面就以Windows为例来介绍如何基于Hexo搭建网站，个人经验，仅供参考</p><h2 id="1、配置博客"><a href="#1、配置博客" class="headerlink" title="1、配置博客"></a>1、配置博客</h2><p>1、下载Git for Windows并安装。下载地址：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a></p><p>2、下载Node.js并安装。下载地址：<a href="https://nodejs.org/en/download" target="_blank" rel="noopener">https://nodejs.org/en/download</a></p><p>3、安装Hexo<br>   打开Git Bash（在任意位置单击右键，选择“Git Bash Here”即可） 执行npm命令即可安装</p><pre><code>$ npm install -g hexo-cli</code></pre><h2 id="2、建站"><a href="#2、建站" class="headerlink" title="2、建站"></a>2、建站</h2><p>   安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><pre><code>$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install</code></pre><p>   新建完成后，指定文件夹的目录如下：</p><pre><code>.├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _posts —— themes</code></pre><p>   建站完成后，您可以在_config.yml中修改大部分的配置，详细介绍见<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a></p><h2 id="3、查看效果"><a href="#3、查看效果" class="headerlink" title="3、查看效果"></a>3、查看效果</h2><p>   Hexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。</p><pre><code>$ npm install hexo-server --save</code></pre><p>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。在服务器启动期间Hexo会监视文件变动并自动更新，您无须重启服务器。 </p><pre><code>$ hexo server</code></pre><p>   如果您想要更改端口，或是在执行时遇到了 EADDRINUSE 错误，可以在执行时使用 -p 选项指定其他端口，如下：</p><pre><code>$ hexo server -p 5000</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;   很高兴看到您的到来，这是我的第一篇博客，当然首先得介绍一下自己是如何一步一步基于Hexo搭建起个人网站的。由于个人电脑是windows系统，所以下面就以Windows为例来介绍如何基于Hexo搭建网站，个人经验，仅供参考&lt;/p&gt;
+&lt;h2 id=&quot;1、配置博客&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/05/25/hello-world/"/>
+    <id>http://yoursite.com/2018/05/25/hello-world/</id>
+    <published>2018-05-25T07:50:11.719Z</published>
+    <updated>2018-05-25T07:50:11.720Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
