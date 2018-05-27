@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-27T08:50:17.501Z</updated>
+  <updated>2018-05-27T14:31:56.788Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/05/26/%E6%94%B9%E5%8F%98%E4%B8%BB%E9%A2%98%EF%BC%9A%E6%89%93%E9%80%A0%E5%B1%9E%E4%BA%8E%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E6%80%A7%E7%BD%91%E7%AB%99/"/>
     <id>http://yoursite.com/2018/05/26/改变主题：打造属于你自己的个性网站/</id>
     <published>2018-05-26T14:53:21.000Z</published>
-    <updated>2018-05-27T08:50:17.501Z</updated>
+    <updated>2018-05-27T14:31:56.788Z</updated>
     
-    <content type="html"><![CDATA[<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每个人的喜好不同，所以默认的网站主题肯定满足不了大家的需求了，本节我就来带领大家一起改变主题样式，打造一款符合我们自己风格的个性网站。</p><h2 id="1、挑选我们自己喜爱的主题样式"><a href="#1、挑选我们自己喜爱的主题样式" class="headerlink" title="1、挑选我们自己喜爱的主题样式"></a>1、挑选我们自己喜爱的主题样式</h2><p>  <a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方网站主题样式</a>提供了大量的好看的主题样式，从中挑选我们喜欢的主题样式后，进入其所在的Github页面，复制其所属的http链接，如“<a href="https://github.com/shinux/hexo-theme-adoubi.git”所示，切换到项目根目录下执行git命令下载主题" target="_blank" rel="noopener">https://github.com/shinux/hexo-theme-adoubi.git”所示，切换到项目根目录下执行git命令下载主题</a></p><pre><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/TKL</code></pre><p>下载完成后，会在项目themes目录下生成yelle文件夹</p><p><img src="https://i.imgur.com/XBpMw73.png" alt=""></p><p>然后修改配置文件_config.yml中的theme项，即可使用新主题</p><p><img src="https://i.imgur.com/b5rv4Sy.png" alt=""></p><p>执行以下命令预览主题</p><pre><code>hexo clean &amp;&amp; hexo s</code></pre><h2 id="2、TKL主题下添加about页面"><a href="#2、TKL主题下添加about页面" class="headerlink" title="2、TKL主题下添加about页面"></a>2、TKL主题下添加about页面</h2><p>1）在source目录下建立about文件夹<br><img src="https://i.imgur.com/nvKV6XC.png" alt=""></p><p>2）按下图所示修改配置文件<br><img src="https://i.imgur.com/iKBzOKt.png" alt=""></p><p><img src="https://i.imgur.com/lID3xF1.png" alt=""></p><p>3）在about文件夹下建立about.html文件即可</p><h2 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h2><p><a href="https://www.jianshu.com/p/c2855934aeec" target="_blank" rel="noopener">Hexo主题设置</a></p>]]></content>
+    <content type="html"><![CDATA[<p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每个人的喜好不同，所以默认的网站主题肯定满足不了大家的需求了，本节我就来带领大家一起改变主题样式，打造一款符合我们自己风格的个性网站。</p><h2 id="1、挑选我们自己喜爱的主题样式"><a href="#1、挑选我们自己喜爱的主题样式" class="headerlink" title="1、挑选我们自己喜爱的主题样式"></a>1、挑选我们自己喜爱的主题样式</h2><p>  <a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方网站主题样式</a>提供了大量的好看的主题样式，从中挑选我们喜欢的主题样式后，进入其所在的Github页面，复制其所属的http链接，如“<a href="https://github.com/shinux/hexo-theme-adoubi.git”所示，切换到项目根目录下执行git命令下载主题" target="_blank" rel="noopener">https://github.com/shinux/hexo-theme-adoubi.git”所示，切换到项目根目录下执行git命令下载主题</a></p><pre><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/TKL</code></pre><p>下载完成后，会在项目themes目录下生成yelle文件夹</p><p><img src="https://i.imgur.com/XBpMw73.png" alt=""></p><p>然后修改配置文件_config.yml中的theme项，即可使用新主题</p><p><img src="https://i.imgur.com/b5rv4Sy.png" alt=""></p><p>执行以下命令预览主题</p><pre><code>hexo clean &amp;&amp; hexo s</code></pre><h2 id="2、TKL主题下添加about页面"><a href="#2、TKL主题下添加about页面" class="headerlink" title="2、TKL主题下添加about页面"></a>2、TKL主题下添加about页面</h2><p>1）在source目录下生成about文件<br><img src="https://i.imgur.com/jWO8H8H.png" alt=""></p><p>2）使用命令生成文件</p><pre><code>$ hexo g</code></pre><p>3）查看效果</p><pre><code>$ hexo s</code></pre><h2 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h2><p><a href="https://www.jianshu.com/p/c2855934aeec" target="_blank" rel="noopener">Hexo主题设置</a></p>]]></content>
     
     <summary type="html">
     
