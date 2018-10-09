@@ -16,12 +16,12 @@
     <div class="row col-md-6" >
         <div class="row question">
             <div class="col-md-6 col-xs-12">
-                <p style="line-height: 50px;font-size: 10px;">“张潇尹小姐姐，我观察你很久了”</p>
-                <p style="line-height: 50px;font-size: 20px;">能不能按时休息呢？</p>
+                <p style="line-height: 50px;font-size: 10px;">“小姐姐，我观察你很久了”</p>
+                <p style="line-height: 50px;font-size: 20px;">可以做我女朋友嘛</p>
             </div>
             <div class="col-md-6 col-xs-12">
                 <!--<img src="http://ozef40uqu.bkt.clouddn.com/1.png" alt="" style="height: 200px;">-->
-				<img src="top.png" alt="" style="height: 200px;">
+				<img src="top.jpg" alt="" style="height: 200px;">
             </div>
         </div>
         <div class="row question" style="margin-top: 20px;">
@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-12 col-xs-12 hide" id="success">
             <!--<img src="http://ozef40uqu.bkt.clouddn.com/666.jpg" alt="" style="width: 100%;">-->
-			<img src="sleep.jpg" alt="" style="width: 100%;">
+			<img src="happy.gif" alt="" style="width: 100%;">
         </div>
     </div>
 
@@ -46,8 +46,8 @@
     var ok=false;
     $(document).ready(function(){
         $("#no").click(function(){
-            alert("真的吗？你可以做到吗？");
-            alert("我会监督的哦");
+            alert("真的吗？你答应了吗？");
+            alert("给我发消息吧");
             $(".question").addClass('hide');
             $("#success").removeClass('hide');
             ok=true;
@@ -55,22 +55,22 @@
         $("#ok").click(function(){
             switch(i){
                 case 1:
-                    alert("人就不美了呢");
+                    alert("工资上交");
                     break;
                 case 2:
-                    alert("学车没人陪了呢");
+                    alert("家务全包");
                     break;
                 case 3:
-                    alert("会容易生病的呢");
+                    alert("房产证写你的名字");
                     break;
 				case 4:
-                    alert("没有力气健身了呢");
+                    alert("保大");
                     break;
                 case 5:
-                    alert("最重要的不能一块愉快玩耍了呢");
+                    alert("我妈会游泳");
                     break;
                 default:
-                    alert("能不能做到呢");
+                    alert("答应我吧");
             }
             i++;
         });
