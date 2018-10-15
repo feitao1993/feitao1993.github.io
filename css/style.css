@@ -228,7 +228,8 @@ hr {
 	/*vertical-align: middle;*/
 	position: fixed;
     bottom: 30%;
-	left:23%;
+	left:0;
+	right:0;
 }
 /* No padding on-the-fly */
 .nopadding {
