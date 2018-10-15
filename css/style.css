@@ -225,7 +225,10 @@ hr {
 }
 .center-me {
 	display: table-cell;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+	position: fixed;
+    bottom: 30%;
+	left:23%;
 }
 /* No padding on-the-fly */
 .nopadding {
