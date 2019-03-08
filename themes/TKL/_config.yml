@@ -1,0 +1,71 @@
+# config
+cover: /img/bg_img.jpg
+logo: /img/logo.png
+top_saying:
+- title: <font color=#FF34B3>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</font>
+- content: <font color=#FF34B3 size=5 face="黑体">努力是为了有更好的选择</font>
+bottom_saying: 从这里起步，努力成为一名优秀的Man。
+# Content
+excerpt_link: Read More
+
+rss: /atom.xml
+
+highlightjs: vs
+
+#Works
+works:
+- works_name: AAA
+  works_url: /Yearn/demo.html
+- works_name: BBB
+  works_url: atom.xml
+- works_name: CCC
+  works_url: /xiaojiejie/index.html
+- works_name: DDD
+  works_url: /CSDN/csdn.html
+- works_name: 张旭鸣
+  works_url: https://xumingzhang-2018.github.io/
+
+#duoshuo name
+duoshuo:
+
+#disqus name
+disqus_shortname:
+
+#fancybox
+fancybox: true
+
+# Miscellaneous
+github: https://github.com/
+twitter: https://twitter.com/
+facebook: https://www.facebook.com/
+google: https://google.com/
+weibo: http://weibo.com/
+
+#about  timeline
+timeline:
+- num: 1
+  word: 2018/05/25-开始使用Hexo搭建自己的博客网站并配置到github仓库,地址：https://feitao1993.github.io/
+- num: 2
+  word: 2018/5/25-写了属于自己的第一篇博客：基于Hexo搭建个人网站
+- num: 3
+  word: 2018/5/27-修改个主题样式，朝着自己喜欢的方向一步步迈进
+- num: 4
+  word: 不是每一次努力都会有收获，但是每一次收获都必须努力，这是一个不公平的不可逆转的命题。
+
+#Links
+links:
+- name: 百度
+  link: http://www.baidu.com/
+- name: 谷歌
+  link: https://www.google.com.hk
+
+# Local search
+# Dependencies: https://github.com/flashlab/hexo-generator-search
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 2
+  

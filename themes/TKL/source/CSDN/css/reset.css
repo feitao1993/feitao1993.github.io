@@ -1,0 +1,61 @@
+/* 边距初始化 */
+body,h1,h2,h3,h4,h5,h6,p,ul,input{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 去掉列表前的圆点 */
+ul{
+    list-style: none;
+}
+
+/* 去掉链接的下划线 */
+a{
+    text-decoration: none;
+    
+}
+
+/* 字体大小与父元素一样 16px */
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+}
+
+/* 去掉输入框的边距， 清除鼠标移动到输入框边框高亮 */
+input{
+    border: 0;
+    outline: none;
+}
+
+i,em{
+    font-style: normal;
+}
+
+b,strong{
+    font-weight: normal;
+}
+
+
+/* 设置浮动 */
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+/* 防止 margin-top 塌陷 */
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+
+}
+
+
+
+

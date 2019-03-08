@@ -1,0 +1,35 @@
+
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>, Content By <%- config.author %>.
+                </p>
+                <p>I Love <a href="https://img14.360buyimg.com/n0/jfs/t14251/176/2258904398/450102/523e9427/5a90d11fNf560bd5d.jpg" style="color: #767D84">myself</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    <% if(theme.github){ %>
+                    <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    <% } %>
+                    <% if(theme.twitter){ %>
+                    <li><a href="<%- theme.twitter %>" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    <% } %>
+                    <% if(theme.facebook){ %>
+                    <li><a href="<%- theme.facebook %>" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    <% } %>
+                    <% if(theme.google){ %>
+                    <li><a href="<%- theme.google %>" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    <% } %>
+                    <% if(theme.weibo){ %>
+                    <li><a href="<%- theme.weibo %>" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->

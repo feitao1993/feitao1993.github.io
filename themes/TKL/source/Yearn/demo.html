@@ -1,0 +1,116 @@
+<!--
+	声明文档类型：html
+	作用: 符合w3c的统一标准规范
+	每个浏览器对html css js都有自己的编译模式(兼容模式)
+-->
+<!doctype html>
+<html><!--根目录节点标签-->
+	<head><!--头部 抽象的概念 用户看不到 规定一些信息-->
+		<meta charset="utf-8"><!--字符编码:国际编码-->
+		<!--网页文档的三要素-->
+		<title>I Am into you</title>
+		<meta name="keywords" content="关键词:提供给搜索引擎搜索网站">
+		<meta name="description" content="描述:对网页内容的大概的介绍">
+		<link rel="bookmark"  type="images/x-icon"  href="images/favicon.ico"/>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" href="images/favicon.ico">
+		<style>/* css样式 */
+			*{/* 通配符: 选择到所有的标签元素*/
+				margin:0;/*外边距*/
+				padding:0;/*内边距*/
+			}
+			html{
+				height:100%;/*相对于浏览器来计算*/
+			}
+			body{/*标签选择器*/
+				height:100%;/*相对于父元素的高度计算*/
+				background:url("images/top.png") no-repeat center;/*添加背景图片*/
+				background-size:auto 100%;/*背景尺寸：左右 上下*/
+				overflow:hidden;/*超出隐藏*/
+			}
+			/* .heart{. class类选择器 *
+			/*	position:relative;相对定位:参考物 相对于自己原来的位置定位 *
+				width:10px;/*宽度*
+				height:16px;/*高度*
+				/*background:red;背景颜色*
+				/*border-radius:10px 10px 0 0;边框圆角:左上角 右上角 右下角 左下角*/
+				/*transform:rotate(-45deg);css3变换:旋转*
+			}
+			.heart:before,.heart:after{
+				content:"";/*不管里面需不需要内容都必须得写这个属性*
+				position:absolute;/*绝对定位:相对于拥有定位属性(relative/absolute/fixed)的最近的父元素定位*
+				left:0px;/*距离参考物左端的距离*
+				top:0px;/*距离参考物上端的距离*
+				display:block;
+				width:10px;
+				height:16px;
+				background:red;
+				border-radius:10px 10px 0 0;
+				transform:rotate(-45deg);
+			}
+			.heart:after{
+				left:4px;
+				transform:rotate(45deg);
+			}*/
+			/*
+				before ：在标签内容的前面添加内容  相当于一个行内标签
+				after :在标签内容的后面添加内容  相当于一个行内标签
+			*/
+			/*爱心飘落*/
+			.snowfall-flakes{
+				position:relative;
+				width:10px;
+				height:16px;
+			}
+			.snowfall-flakes:before,.snowfall-flakes:after{
+				content:"";
+				position:absolute;
+				left:0px;
+				top:0px;
+				display:block;
+				width:10px;
+				height:16px;
+				background:red;
+				border-radius:10px 10px 0 0;
+				transform:rotate(-45deg);
+			}
+			.snowfall-flakes:after{
+				left:4px;
+				transform:rotate(45deg);
+			}
+			.btn{
+				width:50px;
+				height:50px;
+				background:url("images/0.png")
+			}
+		</style>
+	</head>
+	<body><!--身体-->
+		<!--div 盒子模型标签 宽度 高度 位置-->
+		<div class="btn"></div>
+		<audio id="music" src="半阳-流浪.mp3" loop="true"></audio>
+		<script src="js/jquery-1.2.6.min.js"></script>
+		<script src="js/snowfall.jquery.js"></script>
+		<script>
+			//调用飘落函数 实现飘落效果
+			$(document).snowfall({
+				flakeCount: 50  //爱心的个数
+			});
+			//点击实现音乐播放功能
+			//$(".btn") 选中btn这个按钮标签
+			var onOff = true;
+			$(".btn").click(function(){//点击实现什么功能
+				//get(0) 转换为dom节点
+				if (onOff)//若果onOff= true
+				{
+					$("#music").get(0).play();//播放音乐  play()原生dom提供的api接口
+					onOff = false;
+				}else{
+					$("#music").get(0).pause();//暂停歌曲
+					onOff = true;
+				}
+				
+			});
+		</script>
+	</body>
+</html>
