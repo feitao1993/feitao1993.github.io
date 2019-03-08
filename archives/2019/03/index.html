@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>基于Hexo搭建个人网站 | 费涛</title>
+  <title>Archives: 2019/3 | 费涛</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -61,7 +61,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -178,146 +178,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2018-05-24T16:00:00.000Z" itemprop="datePublished">
-          2018-05-25
-      </time>
-    
-</span>
-                <h1>基于Hexo搭建个人网站</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2><font color=#FF34B3>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</font></h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p><font color=#FF34B3 size=5 face="黑体">努力是为了有更好的选择</font></p>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>   很高兴看到您的到来，这是我的第一篇博客，当然首先得介绍一下自己是如何一步一步基于Hexo搭建起个人网站的。由于个人电脑是windows系统，所以下面就以Windows为例来介绍如何基于Hexo搭建网站，个人经验，仅供参考</p>
-<h2 id="1、配置博客"><a href="#1、配置博客" class="headerlink" title="1、配置博客"></a>1、配置博客</h2><p>1、下载Git for Windows并安装。下载地址：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a></p>
-<p>2、下载Node.js并安装。下载地址：<a href="https://nodejs.org/en/download" target="_blank" rel="noopener">https://nodejs.org/en/download</a></p>
-<p>3、安装Hexo<br>   打开Git Bash（在任意位置单击右键，选择“Git Bash Here”即可） 执行npm命令即可安装</p>
-<pre><code>$ npm install -g hexo-cli
-</code></pre><h2 id="2、建站"><a href="#2、建站" class="headerlink" title="2、建站"></a>2、建站</h2><p>   安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
-<pre><code>$ hexo init &lt;folder&gt;
-$ cd &lt;folder&gt;
-$ npm install
-</code></pre><p>   新建完成后，指定文件夹的目录如下：</p>
-<pre><code>.
-├── _config.yml``
-├── package.json
-├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
- —— themes
-</code></pre><p>   建站完成后，您可以在_config.yml中修改大部分的配置，详细介绍见<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a></p>
-<h2 id="3、查看效果"><a href="#3、查看效果" class="headerlink" title="3、查看效果"></a>3、查看效果</h2><p>   Hexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。</p>
-<pre><code>$ npm install hexo-server --save
-</code></pre><p>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。在服务器启动期间Hexo会监视文件变动并自动更新，您无须重启服务器。 </p>
-<pre><code>$ hexo server
-</code></pre><p>   如果您想要更改端口，或是在执行时遇到了 EADDRINUSE 错误，可以在执行时使用 -p 选项指定其他端口，如下：</p>
-<pre><code>$ hexo server -p 5000
-</code></pre><h2 id="4、部署到GitHub"><a href="#4、部署到GitHub" class="headerlink" title="4、部署到GitHub"></a>4、部署到GitHub</h2><h3 id="4-1-申请Github账号"><a href="#4-1-申请Github账号" class="headerlink" title="4.1 申请Github账号"></a>4.1 申请Github账号</h3><h3 id="4-2-新建一个仓库（Repository）"><a href="#4-2-新建一个仓库（Repository）" class="headerlink" title="4.2 新建一个仓库（Repository）"></a>4.2 新建一个仓库（Repository）</h3><p>   注意名称一定是your_username.github.io这样的格式</p>
-<pre><code>1）比如你的用户名是lisi, Repository name里面就填上 lisi.github.io
-创建新的仓库（repOSitory）
-点击用户左侧的+号菜单中的New repOSitory（step1)
-在repOSitory name中输入二级域名，格式请严格遵照username.github.io（step2)
-是否公开选项可以选取Public（step3)
-勾选step4处，会自动生成一份可编辑的README.md文件（建议勾选）（step4)
-点击create repOSitory生成仓库完毕（step5)
-2）查看新建的仓库（repOSitory）
-可以回到github个人首页点击右侧的仓库区
-进入后在step1处选择并复制http地址，注意此时step2处应该是空的
-</code></pre><p><img src="https://i.imgur.com/lJj4mCH.jpg" alt="新建仓库"></p>
-<h3 id="4-3-配置SSH"><a href="#4-3-配置SSH" class="headerlink" title="4.3 配置SSH"></a>4.3 配置SSH</h3><p>使用hexo博客必须配置SSH。</p>
-<p>打开git bash，输入cd ~/.ssh，如果果提示：No such file or directory 说明未配置SSH。</p>
-<p>本地生成密钥对</p>
-<pre><code>ssh-keygen -t rsa -C &quot;你的邮件地址&quot;，注意命令中的大小写不要搞混。按提示指定保存文件夹，不设置密码。
-</code></pre><p>添加公钥到Github</p>
-<p>  1）根据上一步的提示，找到公钥文件（默认为id_rsa.pub），用记事本打开，全选并复制。</p>
-<p>  2）登录Github，右上角 头像 -&gt; Settings —&gt; SSH keys —&gt; Add SSH key。把公钥粘贴到key中，填好title并点击 Add key。</p>
-<p>  3）git bash中输入命令ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，选yes，等待片刻可看到成功提示。</p>
-<p>###4.4 终端上传博客<br>   1）进入终端，安装git上传插件（会提示输入github用户名和密码）</p>
-<pre><code>$ npm install hexo-deployer-git --save
-</code></pre><p>   2）安装完毕后，输入获取代码</p>
-<pre><code>$ hexo g
-</code></pre><p>   3）最后上传代码</p>
-<pre><code>$ hexo d
-</code></pre><p>效果图如下：<br><img src="https://i.imgur.com/SjykyVj.png" alt="Github效果图"></p>
-<p><img src="https://i.imgur.com/loCOmXb.jpg" alt="网站效果图"></p>
-<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><p><a href="http://dh629.top/2018/05/11/blog/" target="_blank" rel="noopener">基于hexo搭建个人网站（mac版）</a></p>
-<p><a href="https://www.jianshu.com/p/35e197cb1273" target="_blank" rel="noopener">Hexo搭建Github-Pages博客填坑教程</a></p>
-<p><a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hero官方文档</a></p>
-<h1 id="写在文末："><a href="#写在文末：" class="headerlink" title="写在文末："></a>写在文末：</h1><p>经过上面的步骤，我们第一个博客网站就算建成了，怎么样，还算简单吧。尽管Github的仓库容量有限(仅有1G)，但对于小白来练手已经足够了，在接下来的日子里，我会逐步讲解一下如何美化我们的网站和添加内容。</p>
-<p><strong>至此，第一篇博客就算写完了，希望大家多多指点~</strong></p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
-    
-    <a class="pull-left" href="/2018/05/25/hello-world/" style="float: left;">
-        ← Hello World
-    </a>
-    
-    
-</nav>
-
-        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
-  /**
-   * 搜狐畅言
-   */
-
-  /*
-  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
-
-  window.onload = function () {
-    (function () {
-      var appid = 'cytXXXX';
-      var conf = 'prod_xxxxxxxxxxxxxxxxx';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      var loadJs = function (d, a, id) {
-        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
-        var b = document.createElement("script");
-        b.setAttribute("type", "text/javascript");
-        b.setAttribute("charset", "UTF-8");
-        b.setAttribute("src", d);
-        if (id) {
-          b.setAttribute("id", id);
-        }
-        if (typeof a === "function") {
-          if (window.attachEvent) {
-            b.onreadystatechange = function () {
-              var e = b.readyState;
-              if (e === "loaded" || e === "complete") {
-                b.onreadystatechange = null;
-                a()
-              }
-            }
-          } else {
-            b.onload = a
-          }
-        }
-        c.appendChild(b)
-      };
-
-      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
-        window.changyan.api.config({
-          appid: appid,
-          conf: conf
-        })
-      });
-    })();
-  }
-  */
-
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2019/03/06/多终端管理Hexo博客/">多台电脑设备同步管理Hexo博客</a></h4>
+                            
+                            <p><time datetime="2019-03-06T12:01:21.000Z"><a href="/2019/03/06/多终端管理Hexo博客/">2019-03-06</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>从这里起步，努力成为一名优秀的Man。</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 
