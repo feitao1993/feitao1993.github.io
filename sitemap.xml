@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/03/09/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E4%BA%86/</loc>
+    
+    <lastmod>2019-03-09T03:24:14.504Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/03/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2019-03-09T03:24:14.500Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/05/25/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A4%B4%EF%BC%9A%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2019-03-08T11:52:40.008Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://yoursite.com/2018/05/25/hello-world/</loc>
     
     <lastmod>2019-03-08T11:51:53.095Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/03/06/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2019-03-08T11:49:32.216Z</lastmod>
     
   </url>
   

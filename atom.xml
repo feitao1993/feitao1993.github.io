@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-08T11:49:32.216Z</updated>
+  <updated>2019-03-09T03:24:14.504Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>成功了</title>
+    <link href="http://yoursite.com/2019/03/09/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E4%BA%86/"/>
+    <id>http://yoursite.com/2019/03/09/终于成功了/</id>
+    <published>2019-03-09T12:01:21.000Z</published>
+    <updated>2019-03-09T03:24:14.504Z</updated>
+    
+    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>多台电脑设备同步管理Hexo博客</title>
-    <link href="http://yoursite.com/2019/03/06/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/03/06/多终端管理Hexo博客/</id>
-    <published>2019-03-06T12:01:21.000Z</published>
-    <updated>2019-03-08T11:49:32.216Z</updated>
+    <link href="http://yoursite.com/2019/03/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/03/08/多终端管理Hexo博客/</id>
+    <published>2019-03-08T12:01:21.000Z</published>
+    <updated>2019-03-09T03:24:14.500Z</updated>
     
     <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。</p>]]></content>
     
