@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-09T03:24:14.504Z</updated>
+  <updated>2019-03-09T05:50:38.138Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,42 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>成功了</title>
-    <link href="http://yoursite.com/2019/03/09/%E7%BB%88%E4%BA%8E%E6%88%90%E5%8A%9F%E4%BA%86/"/>
-    <id>http://yoursite.com/2019/03/09/终于成功了/</id>
-    <published>2019-03-09T12:01:21.000Z</published>
-    <updated>2019-03-09T03:24:14.504Z</updated>
-    
-    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>多台电脑设备同步管理Hexo博客</title>
-    <link href="http://yoursite.com/2019/03/08/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/03/08/多终端管理Hexo博客/</id>
-    <published>2019-03-08T12:01:21.000Z</published>
-    <updated>2019-03-09T03:24:14.500Z</updated>
+    <link href="http://yoursite.com/2019/03/09/%E5%A4%9A%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86Hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/03/09/多终端管理Hexo博客/</id>
+    <published>2019-03-09T06:46:21.000Z</published>
+    <updated>2019-03-09T05:50:38.138Z</updated>
     
-    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。</p>]]></content>
+    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。</p><h1 id="一、本机操作"><a href="#一、本机操作" class="headerlink" title="一、本机操作"></a>一、本机操作</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先要确保本机已经配置好了Hexo博客环境，能够在github看到自己的文件，如若没有配置，请参考第一篇博客教程先行搭建hexo的github环境。</p><h2 id="1、在github上创建hexo分支"><a href="#1、在github上创建hexo分支" class="headerlink" title="1、在github上创建hexo分支"></a>1、在github上创建hexo分支</h2><p><img src="https://i.imgur.com/76mVakp.png" alt=""></p><h2 id="2、设置默认分支"><a href="#2、设置默认分支" class="headerlink" title="2、设置默认分支"></a>2、设置默认分支</h2><p><img src="https://i.imgur.com/io1fvF1.png" alt=""></p><h2 id="3、配置文件上传"><a href="#3、配置文件上传" class="headerlink" title="3、配置文件上传"></a>3、配置文件上传</h2><h3 id="1）将hexo分支克隆到本地"><a href="#1）将hexo分支克隆到本地" class="headerlink" title="1）将hexo分支克隆到本地"></a>1）将hexo分支克隆到本地</h3><ul><li><p>列表项配置.gitignore文件。进入博客目录文件夹下，找到此文件，用sublime text打开，在最后增加两行内容/.deploy_git和/public</p></li><li><p>新建一个文件夹（hexo）,将hexo分支克隆到改文件夹，会出现username.github.io文件夹 </p><p> <code>git clone your-github-address</code></p></li><li><p>将博客配置文件拷入该文件夹，同时将themes文件夹下各主题的.git文件夹删除(为隐藏文件)</p></li></ul><h3 id="2）将hexo分支上传github"><a href="#2）将hexo分支上传github" class="headerlink" title="2）将hexo分支上传github"></a>2）将hexo分支上传github</h3><p> &nbsp;&nbsp;&nbsp;&nbsp;部署到github，修改_config.yml文件中的Deployment，</p><pre><code>deploy:    type: git    repo: git@github.com:yourname/yourname.github.io.git    branch: master</code></pre><p>  &nbsp;&nbsp;&nbsp;&nbsp;然后在git bash中执行以下代码：</p><p>  &nbsp;&nbsp;&nbsp;&nbsp;<code>git add .</code></p><p>  &nbsp;&nbsp;&nbsp;&nbsp;<code>git commit -m &quot;更新说明&quot;</code></p><p>  &nbsp;&nbsp;&nbsp;&nbsp;<code>git push origin hexo</code></p><h1 id="二、另一台电脑完成clone和push更新"><a href="#二、另一台电脑完成clone和push更新" class="headerlink" title="二、另一台电脑完成clone和push更新"></a>二、另一台电脑完成clone和push更新</h1><h3 id="1）将hexo分支克隆到本地-1"><a href="#1）将hexo分支克隆到本地-1" class="headerlink" title="1）将hexo分支克隆到本地"></a>1）将hexo分支克隆到本地</h3><pre><code>git clone your-github-address</code></pre><h3 id="2）进行本地配置"><a href="#2）进行本地配置" class="headerlink" title="2）进行本地配置"></a>2）进行本地配置</h3><pre><code>npm installgit pull origin hexogit add .git commit -m &quot;更新说明&quot;git push origin masterhexo ghexo d</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>这样就可以解决不同终端的同步问题啦，过程中可能还会遇到一些小问题，比如命令执行失败等，后续我会将遇到的问题一一给出相应的解决方案，大家也可以根据错误提示自行百度，相信很容易就解决了，接下来就愉快的玩耍吧！</strong></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;好久没更新博客了，今天给大家介绍一下，如何在多台设备上管理Hexo博客，经过几天的摸索和查阅资料，终于找到了一个切实可行的方法，下面把详细的过程讲一下。&lt;/p&gt;
-
+&lt;h1 id=&quot;
       
     
     </summary>
